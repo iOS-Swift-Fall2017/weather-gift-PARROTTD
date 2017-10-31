@@ -17,6 +17,7 @@
 		DE391D2A1F95612900181E79 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE391D291F95612900181E79 /* PageVC.swift */; };
 		DE4962561F9E8927000ABE96 /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4962551F9E8927000ABE96 /* WeatherLocation.swift */; };
 		DE4962581F9F9C8A000ABE96 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4962571F9F9C8A000ABE96 /* constants.swift */; };
+		DE49625A1FA7D748000ABE96 /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4962591FA7D748000ABE96 /* DayWeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DE391D291F95612900181E79 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		DE4962551F9E8927000ABE96 /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		DE4962571F9F9C8A000ABE96 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		DE4962591FA7D748000ABE96 /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				DE4962571F9F9C8A000ABE96 /* constants.swift */,
 				DE4962551F9E8927000ABE96 /* WeatherLocation.swift */,
 				DE1F21291F9558E10083F87B /* DetailVC.swift */,
+				DE4962591FA7D748000ABE96 /* DayWeatherCell.swift */,
 				DE1F212B1F955DE20083F87B /* ListVC.swift */,
 				DE1F211B1F9557C30083F87B /* Main.storyboard */,
 				DE1F211E1F9557C30083F87B /* Assets.xcassets */,
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE49625A1FA7D748000ABE96 /* DayWeatherCell.swift in Sources */,
 				DE4962561F9E8927000ABE96 /* WeatherLocation.swift in Sources */,
 				DE1F212C1F955DE20083F87B /* ListVC.swift in Sources */,
 				DE391D2A1F95612900181E79 /* PageVC.swift in Sources */,
