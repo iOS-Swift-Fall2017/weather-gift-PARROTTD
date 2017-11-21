@@ -21,6 +21,7 @@
 		DE4962561F9E8927000ABE96 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4962551F9E8927000ABE96 /* WeatherDetail.swift */; };
 		DE4962581F9F9C8A000ABE96 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4962571F9F9C8A000ABE96 /* constants.swift */; };
 		DE49625A1FA7D748000ABE96 /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4962591FA7D748000ABE96 /* DayWeatherCell.swift */; };
+		DE4F6B771FC4A58F00BA0615 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F6B761FC4A58F00BA0615 /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DE4962551F9E8927000ABE96 /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		DE4962571F9F9C8A000ABE96 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		DE4962591FA7D748000ABE96 /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
+		DE4F6B761FC4A58F00BA0615 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				DE40AC4E1FB12172000D871F /* HourlyWeatherCell.swift */,
 				DE1F212B1F955DE20083F87B /* ListVC.swift */,
 				DE1F211B1F9557C30083F87B /* Main.storyboard */,
+				DE4F6B761FC4A58F00BA0615 /* AboutVC.swift */,
 				DE1F211E1F9557C30083F87B /* Assets.xcassets */,
 				DE1F21201F9557C30083F87B /* LaunchScreen.storyboard */,
 				DE1F21231F9557C30083F87B /* Info.plist */,
@@ -255,6 +258,7 @@
 				DE40AC4D1FAFD4C5000D871F /* TimeInterval+format.swift in Sources */,
 				DE1F21181F9557C30083F87B /* AppDelegate.swift in Sources */,
 				DE1F212A1F9558E10083F87B /* DetailVC.swift in Sources */,
+				DE4F6B771FC4A58F00BA0615 /* AboutVC.swift in Sources */,
 				DE4962581F9F9C8A000ABE96 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

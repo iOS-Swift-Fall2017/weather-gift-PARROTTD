@@ -18,6 +18,9 @@ class PageVC: UIPageViewController {
     var listButton: UIButton!
     var barButtonWidth: CGFloat = 44
     var barButtonHeight: CGFloat = 44
+    var aboutButton: UIButton!
+    var aboutButtonSize: CGSize!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +28,7 @@ class PageVC: UIPageViewController {
         delegate = self
         dataSource = self
         
-        var newLocation = WeatherLocation(name: "", coordinates: "")
+        let newLocation = WeatherLocation(name: "", coordinates: "")
         newLocation.name = ""
         locationsArray.append(newLocation)
         loadLocations()
@@ -34,8 +37,10 @@ class PageVC: UIPageViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        configureAboutButton()
         configureListButton()
         configurePageControl()
+        
         
     }
     
@@ -52,8 +57,9 @@ class PageVC: UIPageViewController {
     }
     
     func configurePageControl(){
+        let largestWidth = max(barButtonWidth, aboutButton.frame.width)
         let pageControlHeight: CGFloat = barButtonHeight
-        let pageControlWidth: CGFloat = view.frame.width - (barButtonWidth * 2)
+        let pageControlWidth: CGFloat = view.frame.width - (largestWidth * 2)
         
         let safeHeight = view.frame.height - view.safeAreaInsets.bottom
         
@@ -76,6 +82,28 @@ class PageVC: UIPageViewController {
         listButton.setImage(UIImage(named: "listbutton-highlighted"), for: .highlighted)
         listButton.addTarget(self, action: #selector(segueToListVC), for: .touchUpInside)
         view.addSubview(listButton)
+    }
+    
+    
+    func configureAboutButton() {
+        let aboutButtonText = "Abuot..."
+        let aboutButtonFont = UIFont.systemFont(ofSize: 15)
+        let fontAttributes = [NSAttributedStringKey.font: aboutButtonFont]
+        aboutButtonSize = aboutButtonText.size(withAttributes: fontAttributes)
+        aboutButtonSize.height += 16
+        aboutButtonSize.width += 16
+        
+        let safeHeight = view.frame.height - view.safeAreaInsets.bottom
+        aboutButton = UIButton(frame: CGRect(x: 8, y: (safeHeight - 5) - aboutButtonSize.height, width: aboutButtonSize.width, height: aboutButtonSize.height))
+        aboutButton.setTitle(aboutButtonText, for: .normal)
+        aboutButton.setTitleColor(UIColor.darkText, for: .normal)
+        aboutButton.titleLabel?.font = aboutButtonFont
+        aboutButton.addTarget(self, action: #selector(segueToAboutVC), for: .touchUpInside)
+        view.addSubview(aboutButton)
+    }
+    
+    @objc func segueToAboutVC(){
+        performSegue(withIdentifier: "toAboutVC", sender: nil)
     }
     
     @objc func segueToListVC(){
